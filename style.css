@@ -1,0 +1,92 @@
+* {
+  background-color: #a6f2d4;
+  color: #6026a6;
+  margin: 10px;
+  padding: 10px;
+}
+:root {
+  --off-white: #fafafa;
+  --white: #fdfdfd;
+  --primary-text: #1a1a2e;
+  --placeholder-text: #6b7280;
+  --invalid: red;
+  --valid: green;
+}
+body {
+  background-color: var(--off-white);
+  color: var(--primary-text);
+  font-size: 16px;
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+aside {
+  background-image: url("./vacuum-aside-background.jpg");
+  h1 {
+    font-size: 2rem;
+    font-family: "Emilys Candy", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+  :where(h1) {
+    margin-block: 0.67em;
+    font-size: 2em;
+    font-family: "Emilys Candy", serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+h1 {
+  font-size: 2rem;
+  font-family: "Emilys Candy", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+:where(h1) {
+  margin-block: 0.67em;
+  font-size: 2em;
+  font-family: "Emilys Candy", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+h2 {
+  font-size: 1.8rem;
+}
+p,
+em {
+  background-color: var(--off-white);
+  color: var(--primary-text);
+}
+em {
+  font-family: "Poppins", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+form {
+  background-color: var(--white);
+  border: 1px solid #fff;
+}
+legend {
+  background-color: var(--white);
+  color: var(--primary-text);
+}
+input {
+  background-color: var(--white);
+  /* color: var(--placeholder-text); */
+}
+::placeholder {
+  color: var(--placeholder-text);
+}
+label {
+  background-color: var(--white);
+  color: var(--primary-text);
+}
+fieldset {
+  background-color: var(--white);
+  color: var(--primary-text);
+  border: none;
+}
+button {
+  background-color: inherit;
+  color: inherit;
+}

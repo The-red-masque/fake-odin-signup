@@ -5,12 +5,13 @@
   padding: 10px;
 }
 :root {
-  --off-white: #fafafa;
-  --white: #fdfdfd;
-  --primary-text: #1a1a2e;
-  --placeholder-text: #6b7280;
-  --invalid: red;
-  --valid: green;
+  --off-white: rgba(250, 250, 250, 1);
+  --white: rgba(253, 253, 253, 1);
+  --primary-text: rgba(26, 26, 46, 1);
+  --placeholder-text: rgba(107, 114, 128, 1);
+  --invalid: rgba(255, 0, 0);
+  --valid: rgba(0, 255, 0);
+  --transparent: rgba(0, 0, 0, 0);
 }
 body {
   background-color: var(--off-white);
@@ -27,6 +28,8 @@ aside {
     font-family: "Emilys Candy", serif;
     font-weight: 400;
     font-style: normal;
+    background-color: rgba(166, 242, 212, 0.25);
+    /* justify-content: center; */
   }
   :where(h1) {
     margin-block: 0.67em;
@@ -34,6 +37,9 @@ aside {
     font-family: "Emilys Candy", serif;
     font-weight: 400;
     font-style: normal;
+  }
+  p {
+    background-color: var(--transparent);
   }
 }
 h1 {
@@ -54,12 +60,10 @@ h2 {
 }
 p,
 em {
-  background-color: var(--off-white);
+  background-color: var(--transparent);
   color: var(--primary-text);
 }
 em {
-  font-family: "Poppins", sans-serif;
-  font-weight: 400;
   font-style: italic;
 }
 form {
@@ -67,26 +71,41 @@ form {
   border: 1px solid #fff;
 }
 legend {
-  background-color: var(--white);
+  background-color: var(--transparent);
   color: var(--primary-text);
 }
 input {
-  background-color: var(--white);
-  /* color: var(--placeholder-text); */
+  background-color: var(--transparent);
 }
 ::placeholder {
   color: var(--placeholder-text);
 }
+
 label {
-  background-color: var(--white);
+  background-color: var(--transparent);
   color: var(--primary-text);
 }
 fieldset {
-  background-color: var(--white);
+  background-color: var(--transparent);
   color: var(--primary-text);
   border: none;
 }
 button {
-  background-color: inherit;
-  color: inherit;
+  background-color: var(--placeholder-text);
+  color: var(--off-white);
+  border: none;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 18px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-right: 10px;
+  padding: 12px 18px;
+  border-radius: 4px;
+}
+button:hover {
+  box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.44);
+}
+a {
+  /* color: var(--white); */
+  background-color: var(--transparent);
 }

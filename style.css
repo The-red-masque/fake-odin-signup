@@ -12,6 +12,7 @@
   --invalid: rgba(255, 0, 0);
   --valid: rgba(0, 255, 0);
   --transparent: rgba(0, 0, 0, 0);
+  --white-shadow: rgba(216, 216, 216, 0.44);
 }
 body {
   background-color: var(--off-white);
@@ -60,7 +61,7 @@ h2 {
 }
 p,
 em {
-  background-color: var(--transparent);
+  background-color: inherit;
   color: var(--primary-text);
 }
 em {
@@ -68,26 +69,31 @@ em {
 }
 form {
   background-color: var(--white);
-  border: 1px solid #fff;
+  /* border: 2px inset black; */
+  box-shadow: 0px 0px 4px 4px var(--white-shadow);
 }
-legend {
-  background-color: var(--transparent);
+legend,
+label,
+input {
+  background-color: inherit;
   color: var(--primary-text);
 }
 input {
-  background-color: var(--transparent);
+  border: 2px solid var(--white-shadow);
 }
+input:invalid {
+  border: 2px solid var(--invalid);
+}
+input:valid {
+  border: 2px solid var(--valid);
+}
+
 ::placeholder {
   color: var(--placeholder-text);
 }
 
-label {
-  background-color: var(--transparent);
-  color: var(--primary-text);
-}
 fieldset {
-  background-color: var(--transparent);
-  color: var(--primary-text);
+  background-color: inherit;
   border: none;
 }
 button {
@@ -105,6 +111,7 @@ button {
 button:hover {
   box-shadow: 0px 0px 4px 4px rgba(0, 0, 0, 0.44);
 }
+
 a {
   /* color: var(--white); */
   background-color: var(--transparent);

@@ -42,6 +42,9 @@ aside {
   p {
     background-color: var(--transparent);
   }
+  img {
+    background-color: var(--transparent);
+  }
 }
 h1 {
   font-size: 2rem;
@@ -81,7 +84,7 @@ input {
 input {
   border: 2px solid var(--white-shadow);
 }
-input:invalid {
+input:user-invalid {
   border: 2px solid var(--invalid);
 }
 input:valid {
@@ -97,7 +100,7 @@ fieldset {
   border: none;
 }
 button {
-  background-color: var(--placeholder-text);
+  background-color: #596d48;
   color: var(--off-white);
   border: none;
   cursor: pointer;

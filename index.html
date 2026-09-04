@@ -14,7 +14,14 @@
   </head>
   <body>
     <aside>
-      <h1>Fake Service</h1>
+      <h1>
+        <img
+          alt="The Odin Project Logo"
+          src="odin-lined.png"
+          width="10%"
+          height="auto"
+        />Fake Service
+      </h1>
       Photo by
       <a
         href="https://unsplash.com/@onurbinay?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
@@ -44,9 +51,16 @@
           id="first_name"
           name="first_name"
           placeholder="John"
+          required
         />
         <label for="last_name">Last Name:</label>
-        <input type="text" id="last_name" name="last_name" placeholder="Doe" />
+        <input
+          type="text"
+          id="last_name"
+          name="last_name"
+          placeholder="Doe"
+          required
+        />
       </fieldset>
       <!-- Contact -->
       <fieldset>
@@ -56,6 +70,7 @@
           id="email"
           name="email"
           placeholder="name@website.com"
+          required
         />
         <label for="phone_number">Phone Number:</label>
         <input
@@ -63,24 +78,26 @@
           id="phone_number"
           name="phone_number"
           placeholder="(555) 555-5555"
+          required
         />
       </fieldset>
       <fieldset>
         <!-- Password -->
         <label for="pwd">Password:</label>
-        <input type="password" id="pwd" name="pwd" />
+        <input type="password" id="pwd" name="pwd" required />
         <label for="pwd">Confirm Password:</label>
-        <input type="password" id="pwd1" name="pwd1" />
+        <input type="password" id="pwd1" name="pwd1" required />
         <!-- /^((?=\S*?[A-Z])(?=\S*?[a-z])(?=\S*?[0-9]).{6,})\S$/ -->
       </fieldset>
       <button type="submit">Create Account</button>
-      <p>
-        Already have an account?
-        <a
-          href="https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form"
-          >Log in</a
-        >
-      </p>
     </form>
+    <!-- <button type="submit">Create Account</button> -->
+    <p>
+      Already have an account?
+      <a
+        href="https://www.theodinproject.com/lessons/node-path-intermediate-html-and-css-sign-up-form"
+        >Log in</a
+      >
+    </p>
   </body>
 </html>

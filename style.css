@@ -13,6 +13,7 @@
   --valid: rgba(0, 255, 0);
   --transparent: rgba(0, 0, 0, 0);
   --white-shadow: rgba(216, 216, 216, 0.44);
+  --grey-shadow: rgba(40, 40, 40, 0.4);
 }
 body {
   background-color: var(--off-white);
@@ -23,14 +24,38 @@ body {
   font-style: normal;
 }
 aside {
+  display: flex;
+  flex-flow: column;
+  color: var(--white);
+  a {
+    color: var(--white);
+  }
+  div {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--grey-shadow);
+  }
+  .row {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--transparent);
+    color: var(--white);
+  }
   background-image: url("./vacuum-aside-background.jpg");
   h1 {
+    display: inherit;
+    color: var(--white);
     font-size: 2rem;
     font-family: "Emilys Candy", serif;
     font-weight: 400;
     font-style: normal;
-    background-color: rgba(166, 242, 212, 0.25);
-    /* justify-content: center; */
+    background-color: var(--transparent);
+    justify-content: center;
+    align-content: center;
   }
   :where(h1) {
     margin-block: 0.67em;

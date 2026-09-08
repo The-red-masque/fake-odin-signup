@@ -1,9 +1,3 @@
-* {
-  background-color: #a6f2d4;
-  color: #6026a6;
-  /* margin: 10px;
-  padding: 10px; */
-}
 :root {
   --off-white: rgba(250, 250, 250, 1);
   --white: rgba(253, 253, 253, 1);
@@ -32,7 +26,7 @@ aside {
   width: 50vh;
   height: 100vh;
   flex-flow: column;
-  /* justify-content: flex-start; */
+  justify-content: space-around;
   color: var(--white);
   a {
     color: var(--white);
@@ -68,9 +62,11 @@ aside {
     font-style: normal;
   }
   p {
-    background-color: var(--transparent);
+    background-color: var(--grey-shadow);
     color: var(--off-white);
-    justify-content: flex-end;
+    justify-content: center;
+    /* justify-content: flex-end; */
+    align-self: center;
   }
   img {
     background-color: var(--transparent);
@@ -103,6 +99,7 @@ p,
 em {
   background-color: inherit;
   color: var(--primary-text);
+  font-size: 1.5rem;
 }
 em {
   font-style: italic;
@@ -119,10 +116,18 @@ label,
 input {
   background-color: inherit;
   color: var(--primary-text);
+  /* font-size: 1rem; */
   padding: 1%;
   margin: 1%;
 }
+legend {
+  font-size: 1.6rem;
+}
+label {
+  font-size: 1rem;
+}
 input {
+  font-size: 1rem;
   border: 2px solid var(--white-shadow);
 }
 input:user-invalid {
@@ -138,7 +143,7 @@ input:valid {
 
 fieldset {
   display: flex;
-  flex-flow: row;
+  /* flex-flow: row; */
   background-color: inherit;
   border: none;
 }

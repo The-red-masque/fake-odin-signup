@@ -32,6 +32,7 @@ aside {
   width: 50vh;
   height: 100vh;
   flex-flow: column;
+  /* justify-content: flex-start; */
   color: var(--white);
   a {
     color: var(--white);
@@ -51,7 +52,7 @@ aside {
   h1 {
     display: inherit;
     color: var(--white);
-    font-size: 2rem;
+    font-size: 3rem;
     font-family: "Emilys Candy", serif;
     font-weight: 400;
     font-style: normal;
@@ -69,14 +70,21 @@ aside {
   p {
     background-color: var(--transparent);
     color: var(--off-white);
+    justify-content: flex-end;
   }
   img {
     background-color: var(--transparent);
+    width: 3rem;
+    height: 4rem;
+    padding-right: 5%;
   }
 }
 div {
+  display: flex;
+  flex-flow: column;
   color: inherit;
   background-color: inherit;
+  justify-content: center;
 }
 h1 {
   font-size: 2rem;

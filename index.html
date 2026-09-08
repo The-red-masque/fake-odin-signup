@@ -44,7 +44,7 @@
       </p>
       <p class="paddington">You <em>know</em> you want to.</p>
 
-      <form>
+      <form id="createAccount">
         <legend>Let's do this!</legend>
         <!-- Name -->
         <fieldset>
@@ -108,9 +108,9 @@
           />
           <!-- /^((?=\S*?[A-Z])(?=\S*?[a-z])(?=\S*?[0-9]).{6,})\S$/ -->
         </fieldset>
-        <button type="submit">Create Account</button>
+        <!-- <button type="submit">Create Account</button> -->
       </form>
-      <!-- <button class="paddington" type="submit">Create Account</button> -->
+      <button type="submit" form="createAccount">Create Account</button>
       <p class="paddington">
         Already have an account?
         <a
